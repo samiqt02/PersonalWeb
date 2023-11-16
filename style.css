@@ -408,7 +408,7 @@ nav {
         height: 30px;
         background-color: transparent;
         position: absolute;
-        top: 3vh;
+        top: 3.5vh;
         right: 20px;
         cursor: pointer;
         z-index: 2;
@@ -458,7 +458,7 @@ nav {
         margin-bottom: 20px;
     }
     .container .picNgPogi {
-        margin-top: 5rem;
+        margin-top: 2rem;
         height: 30vh;
         width: 100%;
     }
