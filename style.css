@@ -116,10 +116,12 @@ nav {
     align-items: center;
 }
 .logo img {
+    display: flex;
     padding: 0;
     margin-left: 50px;
     display: flex;
-    height: 100px;
+    height: 80px;
+    width: 110px;
     background-color: none;
 }
 .navbar {
@@ -174,11 +176,26 @@ nav {
   align-items: center;
   justify-content: center;
 }
-.container .picNgPogi img {
-  width: 100%;
-  height: 100%;
-  border: none;
-  position: absolute;
+
+.background-image {
+    width: 100%; /* Make sure the background image covers the entire container */
+    height: 120%;
+    border: none;
+    object-fit: cover; /* Ensure the image retains its aspect ratio while covering the container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Send the background image to the back */
+}
+
+.profile-image {
+    position: absolute;
+    width: 20rem;
+    top: 40%;
+    border-radius: 0 0 20% 45%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 .container .shadow {
     background: rgba(80,80,80,.503);
@@ -187,9 +204,9 @@ nav {
     display: block;
     -webkit-filter: blur(12px);
     filter: blur(12px);
-    height: 3rem;
+    height: 2rem;
     position: absolute;
-    top: 19rem;
+    top: 22rem;
     width: 10rem;
 }
 .container h2 {
@@ -309,7 +326,7 @@ nav {
         height: 30px;
         background-color: transparent;
         position: absolute;
-        top: 6.2vh;
+        top: 4vh;
         right: 20px;
         cursor: pointer;
         z-index: 2;
@@ -354,12 +371,6 @@ nav {
         width: 100%;
         z-index: 0;
     }
-    .container .picNgPogi img {
-        width: 100%;
-        height: 100%;
-        border: none;
-        position: absolute;
-    }
     .container .shadow {
         background: rgba(80,80,80,.503);
         border-radius: 50%;
@@ -380,8 +391,7 @@ nav {
     }
     #darkModeToggle2 {
         display: block;
-        margin-right: 10vh;
-        margin-bottom: 10px;
+        margin-right: 8vh;
         display: flex;
         align-items: center;
         z-index: 1;
@@ -398,7 +408,7 @@ nav {
         height: 30px;
         background-color: transparent;
         position: absolute;
-        top: 4.2vh;
+        top: 2.6vh;
         right: 20px;
         cursor: pointer;
         z-index: 2;
@@ -410,7 +420,7 @@ nav {
         background-color: #000;
         position: absolute;
         top: 0;
-        right: -6.8rem;
+        right: -8.6rem;
         width: 90%;
         height: 100%;
         padding: 0;
@@ -427,9 +437,50 @@ nav {
     }
     .menu-active li a {
         color: #fff;
-        font-size: 28px;
+        font-size: 36px;
         padding-bottom: 8px;
         transition: color 1.5s ease;
+    }
+    .container .text {
+        width: 100%;
+    }
+    .container h2 {
+        font-size: 24px;
+        margin:0;
+    }
+    .container h1 {
+        font-size: 36px;
+        margin:0;
+    }
+    .container p {
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    .container .picNgPogi {
+        margin-top: 0;
+        height: 30vh;
+        width: 100%;
+    }
+    .background-image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .container .profile-image {
+        position: absolute;
+        height: 15rem;
+        width: 15rem;
+        top: 30%;
+        border-radius: 0 0 20% 45%;
+        left: 46%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+    .container .shadow {
+        top: 17rem;
     }
 }
 
