@@ -408,7 +408,7 @@ nav {
         height: 30px;
         background-color: transparent;
         position: absolute;
-        top: 2.6vh;
+        top: 3vh;
         right: 20px;
         cursor: pointer;
         z-index: 2;
@@ -458,7 +458,7 @@ nav {
         margin-bottom: 20px;
     }
     .container .picNgPogi {
-        margin-top: 0;
+        margin-top: 5rem;
         height: 30vh;
         width: 100%;
     }
@@ -471,8 +471,8 @@ nav {
     }
     .container .profile-image {
         position: absolute;
-        height: 15rem;
-        width: 15rem;
+        height: 13rem;
+        width: 13rem;
         top: 30%;
         border-radius: 0 0 20% 45%;
         left: 46%;
@@ -480,7 +480,7 @@ nav {
         z-index: 1;
     }
     .container .shadow {
-        top: 17rem;
+        top: 15rem;
     }
 }
 
