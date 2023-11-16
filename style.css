@@ -380,7 +380,8 @@ nav {
     }
     #darkModeToggle2 {
         display: block;
-        margin-right: 8vh;
+        margin-right: 10vh;
+        margin-bottom: 10px;
         display: flex;
         align-items: center;
         z-index: 1;
